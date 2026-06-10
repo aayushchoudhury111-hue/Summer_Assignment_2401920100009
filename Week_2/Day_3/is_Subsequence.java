@@ -1,0 +1,16 @@
+class Solution {
+    public boolean isSubsequence(String s, String t) {
+        if(s.length()==0) return true;
+        int i = 0;
+        int j = 0;
+        while(i!=s.length() && j!=t.length()){
+            if(s.charAt(i)==t.charAt(j)){
+                System.out.println(s.charAt(i));
+                i++;
+                if(i==s.length()) return true;
+            }
+            j++;
+        }
+        return false;
+    }
+}
